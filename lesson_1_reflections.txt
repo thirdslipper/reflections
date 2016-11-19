@@ -1,0 +1,41 @@
+1How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+FC
+	format in windows: FC file1.txt file2.txt
+	FC is useful because it significantly reduces the time spent looking for potentially unwanted changes in the code, as demonstrated in the Astroid game code: game_new.js and game_old.js.
+
+reference: linux/mac version of FC is diff
+diff format: diff -u file1.txt file2.txt
+	-u stands for "unified diff format" just nies, dropbox, google doc, wiki
+
+
+2How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+If you have access to your entire history, it makes it infinitely easier to compile your works to showcase to people, or even to just easily pull up old work to review or work on once again.
+
+ex: manual copies, dropbox, google doc, wiki
+
+
+3What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+The pros of manual committing is being able to control when you make a commit of a reasonable size, though this is extremely subjective.  Automatic save may be handy in case you do make a human error and forget to save, though most of the automatic saves would be unnecessary if you're doing manual saves on top of it.
+
+
+4Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+The reason for this is most likely because unlike Git, other version-control systems were not created for storing code in mind.
+
+
+5How can you use the commands git log and git diff to view the history of files?
+
+Git log displays all of the commits in a repository, git diff shows the difference in code between two commits, or files. ex 
+git diff game_old.js game_new.js
+git diff commit1 commit2
+
+
+6How might using version control make you more confident to make changes that could break something?
+
+As we saw in the asteroid-rapid-fire bug, we easily fixed that by going through each of our previous commits until we figured out exactly which commit had introduced the bug.  We then can use git diff to further determine exactly which line caused the error.
+
+7Now that you have your workspace set up, what do you want to try using Git for?
+version control
