@@ -1,0 +1,3 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+You would use a remote respository because it allows other people to access your work online, rather than having a direct connection to your work on your computer.
