@@ -4,6 +4,39 @@
 When a repository is initialized, a .git file is created and that allows you to use version control and the other various git commands.  
 
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+2How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area is different because it allows more flexibility for how one wants to commit their files.  One may want to separate completed files from ongoing projects for even better management.
+
+
+3How can you use the staging area to make sure you have one commit per logical change?
+
+You can compare items in the staging area to its version in the repository or working directory.
+
+
+4.What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Some situations in which branching would be helpful for organization is when one wants to have an alternate and separate version of whatever you want to be working on.  Branching also allows naming, which reduces the strain on copy-pasting long commit ID's.
+
+
+5.How do the diagrams help you visualize the branch structure?
+
+As a believe in "a picture is worth a thousand words", the diagrams presented helped tremendously, showing dependencies between branches, commits, and heads.  One dependency may not necessary be reciprocated to the dependent.
+
+
+6What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches is a single branch from 3 different branches, the original branch before the two branches split, and the two.  The changes that it contains is the addition of any code that either of the branches introduced, and the deletion of code if either of the branch deleted it from the original branch.
+
+
+
+7What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's merging is foolproof, it will merge guaranteed code or unconflicted code so your program will run, however it does not know how to merge multiple versions of the same code/method, which must be done manually.
+
+
+
+
+git log --graph --online
+git show commitid
+git merge br1 br2
